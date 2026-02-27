@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Montserrat:wght@600;800&display=swap');
+
+:root {
+  --marines-red: #8e001c;
+  --marines-gold: #ffd700;
+  --marines-navy: #001a30;
+  --marines-white: #ffffff;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: var(--marines-navy);
+  line-height: 1.6;
+}
+
+/* Header & Nav */
+.site-header {
+  background: var(--marines-red);
+  color: var(--marines-gold);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 5px solid var(--marines-gold);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav a {
+  color: var(--marines-white);
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.nav a:hover, .nav a.active {
+  color: var(--marines-gold);
+}
+
+/* Hero/Banner */
+.hero {
+  background: var(--marines-navy);
+  color: var(--marines-white);
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 4px solid var(--marines-gold);
+}
+
+/* Buttons & Links */
+.btn {
+  background: var(--marines-red);
+  color: var(--marines-gold);
+  padding: 15px 30px;
+  border: 2px solid var(--marines-gold);
+  border-radius: 0; /* Military sharp edges */
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: var(--marines-gold);
+  color: var(--marines-red);
+}
+
+/* Grid & Cards */
+.grid-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-left: 10px solid var(--marines-red);
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: var(--marines-red);
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+/* Special Case Formatting */
+.statement-box {
+  background: var(--marines-navy);
+  color: white;
+  padding: 40px;
+  border: 2px solid var(--marines-gold);
+  font-style: italic;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 30px;
+  background: var(--marines-navy);
+  color: var(--marines-gold);
+  margin-top: 50px;
+}
